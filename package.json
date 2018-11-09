@@ -1,0 +1,47 @@
+{
+  "name": "fd-react-components",
+  "version": "1.0.0",
+  "description": "FD React Components",
+  "main": "docs/index.html",
+  "scripts": {
+    "build-dev": "webpack --mode=development",
+    "build-prod": "cross-env NODE_ENV=production webpack --mode=production",
+    "copy": "npm run copy-html && npm run copy-img",
+    "copy-html": "cpx -p -v \"*.html\" \"docs/\"",
+    "copy-img": "cpx -p -v \"img/**/*\" \"docs/\"",
+    "lint": "tslint -p .",
+    "release": "npm update && npm i && npm run lint && npm run copy && npm run build-prod",
+    "test": "",
+    "tsc": "tsc -d",
+    "watch": "npm run build-prod -- --watch"
+  },
+  "keywords": [
+    "FD",
+    "FDMG",
+    "Components",
+    "TypeScript",
+    "React"
+  ],
+  "author": "Willem Liu",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/react": "^16.4.18",
+    "@types/react-dom": "^16.0.9",
+    "@types/styled-components": "^4.0.3",
+    "awesome-typescript-loader": "^5.2.1",
+    "chokidar": "^2.0.4",
+    "cpx": "^1.5.0",
+    "cross-env": "^5.2.0",
+    "tslint": "^5.11.0",
+    "tslint-react": "^3.6.0",
+    "typescript": "^3.1.6",
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2"
+  },
+  "dependencies": {
+    "@fdmg/fd-buttons": "^1.0.6",
+    "react": "^16.6.1",
+    "react-dom": "^16.6.1",
+    "styled-components": "^3.4.10"
+  }
+}
