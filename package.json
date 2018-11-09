@@ -40,6 +40,8 @@
   },
   "dependencies": {
     "@fdmg/fd-buttons": "^1.0.6",
+    "@fdmg/fd-inputs": "^1.0.2",
+    "@fdmg/fd-panels": "^1.0.0",
     "react": "^16.6.1",
     "react-dom": "^16.6.1",
     "styled-components": "^3.4.10"

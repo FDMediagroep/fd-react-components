@@ -2,6 +2,4 @@
 .vscode
 *.iml
 coverage
-dist/demo*
-dist/favicon*
 node_modules

@@ -1,17 +1,56 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>FD React components</title>
+        <title>Kitchensink - FD React components</title>
         <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 
         <link rel="icon" href="favicon.ico">
         <link href="//static-dev.fd.nl/assets/4.1-SNAPSHOT/css/fd.fonts.css" rel="stylesheet"/>
         <link href="//static-dev.fd.nl/assets/4.1-SNAPSHOT/css/fd.screen.css" rel="stylesheet"/>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script>
+            var siteData = {};
+        </script>
     </head>
     <body>
-        <div id="root"></div>
+    
+        <div class="article-page">
+            <h1>Article</h1>
+            <div class="content-area">
+                <div class="centered">
+                    <section class="main">
+                        <main>
+                            <div id="article-main"></div>
+                        </main>
+                        <aside>
+                            <div id="article-aside"></div>
+                        </aside>
+                    </section>
+                </div>
+            </div>
+        </div>
+    
+        <div class="home-page">
+            <h1>Home</h1>
+            <div class="content-area">
+                <div class="centered">
+                    <section class="main">
+                        <main>
+                            <div id="home-main"></div>
+                        </main>
+                        <aside>
+                            <div id="home-aside"></div>
+                        </aside>
+                    </section>
+                </div>
+            </div>
+        </div>
+    
     </body>
+    <script src="//static-dev.fd.nl/assets/4.1-SNAPSHOT/js/fd.js"></script>
+
     <script crossorigin src="//unpkg.com/react@16/umd/react.production.min.js"></script>
     <script crossorigin src="//unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
     <script src="//unpkg.com/styled-components/dist/styled-components.min.js"></script>
