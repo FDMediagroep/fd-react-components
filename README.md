@@ -1,5 +1,5 @@
 # FD React components
-[Kitchensink](https://static.fd.nl/style-guide/index.html)
+[Kitchensink](https://fd.nl/ux)
 
 # Components
 | Name                                                                                                              | Install cmd                                               | NPM Version                                                                                                                                                           | Build                                                                                                                                                                                                     | Coverage                                                                                                                                                                                                                                          |                                                                                                                                               |
